@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap");
+:root {
+  --purple: hsl(259, 100%, 65%);
+  --light-red: hsl(0, 100%, 67%);
+  --white: hsl(0, 0%, 100%);
+  --off-white: hsl(0, 0%, 94%);
+  --light-grey: hsl(0, 0%, 86%);
+  --smokey-grey: hsl(0, 1%, 44%);
+  --off-black: hsl(0, 0%, 8%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: var(--light-grey);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body section {
+  width: 90%;
+  background: var(--white);
+  padding: 6rem 2rem;
+  border-radius: 30px;
+  border-bottom-right-radius: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 2rem;
+}
+body section .date-wrapper {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 1.5rem;
+}
+body section .date-wrapper label {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--smokey-grey);
+  letter-spacing: 2px;
+}
+body section .date-wrapper label input {
+  width: 100%;
+  border: 2px solid var(--light-grey);
+  border-radius: 10px;
+  padding: 0.5em;
+  font-size: 2rem;
+  outline: none;
+}
+body section .date-wrapper label input[type=number] {
+  -moz-appearance: none;
+}
+body section .date-wrapper label input::-webkit-outer-spin-button, body section .date-wrapper label input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+body section .separate {
+  width: 100%;
+  height: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--light-grey);
+  margin: 3vh 0;
+}
+body section .separate img {
+  width: 11.5vw;
+  background: var(--purple);
+  padding: 3vw;
+  border-radius: 100px;
+}
+body section .result-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  font-weight: 800;
+  font-style: italic;
+  line-height: 6.5rem;
+}
+body section .result-wrapper .result {
+  color: var(--off-black);
+  font-size: 6rem;
+}
+body section .result-wrapper .result em {
+  color: var(--purple);
+  margin-right: 1rem;
+}
+
+/*# sourceMappingURL=style.css.map */
