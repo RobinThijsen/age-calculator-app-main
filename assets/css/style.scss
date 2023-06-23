@@ -116,3 +116,29 @@ body {
 		}
 	}
 }
+@media screen and (min-width: 768px) {
+	section {
+		width: 60vw;
+		padding: 5rem;
+		
+		.separator {
+			justify-content: flex-end;
+			
+			.separator img {
+				padding: 1.5rem;
+				
+				&:hover {
+					background: var(--off-black);
+				}
+			}
+		}
+		
+		label {
+			font-size: 1rem;
+		}
+		
+		.result em {
+			content: "--";
+		}
+	}
+}

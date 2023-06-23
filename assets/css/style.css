@@ -103,4 +103,26 @@ body section .result-wrapper .result em {
   margin-right: 1rem;
 }
 
+@media screen and (min-width: 768px) {
+  section {
+    width: 60vw;
+    padding: 5rem;
+  }
+  section .separator {
+    justify-content: flex-end;
+  }
+  section .separator .separator img {
+    padding: 1.5rem;
+  }
+  section .separator .separator img:hover {
+    background: var(--off-black);
+  }
+  section label {
+    font-size: 1rem;
+  }
+  section .result em {
+    content: "--";
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
